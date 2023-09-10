@@ -20,7 +20,7 @@
   
    `// ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));`
    
-6. switched off the mechanism related to the manipulation of the clue variable based on the Image's ID. 
+6. switched off the mechanism related to the manipulation of the `clue` variable based on the Image's ID. 
    ```
    // var el = new Image();
             // Object.defineProperty(el, 'id', {
