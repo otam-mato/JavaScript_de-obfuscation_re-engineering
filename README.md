@@ -4,6 +4,8 @@
    ```
    alert(atob("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
    ```
+    <img width="1000" alt="Screenshot 2023-09-10 at 09 58 47" src="https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7">
+   
 2. found out how the mechanism of triggering the alert works and modified the `if` condition of the `setInterval()` function.
    
    The if condition checks two things:
@@ -89,6 +91,6 @@
       Finally, (x: 84, y: 0). But this is already not neccesarry as the the length of the runes array is greater than `2`, the sum of ASCII values of the characters in `LAMBERT` is greater than `469`. So `setInterval()` works out and the alert is triggered<br>
 
       <img width="1000" alt="Screenshot 2023-09-10 at 17 32 46" src="https://github.com/otammato/crack_me_solution/assets/104728608/9c30ed14-b0cb-4034-866f-6de9f55e849d">
-      <img width="1000" alt="Screenshot 2023-09-10 at 09 58 47" src="https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7">
+     
 
       
