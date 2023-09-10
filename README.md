@@ -120,7 +120,7 @@ The modified file is available here:
 
 Instructions to test it:
 
-1. Execute the ommand `clue` in the console to make sure the clue is 'LAMBERT'
+1. Type the `clue` in the console and hit the enter to make sure the clue is 'LAMBERT'
 2. Drag the "X" marker (canary) around the screen and hit the target coordinates
 3. As you move the marker, the coordinates of the marker will be displayed by the IChing function.
 4. Moving the marker to specific coordinates triggers checks against the ASCII values of the clue variable.
