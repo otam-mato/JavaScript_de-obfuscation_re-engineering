@@ -51,7 +51,7 @@
     'LAMBERT'
     
     ```
-11. The correspondence:
+11. Matching:
     
     ```
     L = ASCII value: 76
