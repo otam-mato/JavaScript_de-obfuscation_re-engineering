@@ -108,6 +108,8 @@ I then matched the ASCII values to the coordinates on the screen:
 
 ![Solution Image](https://github.com/otammato/crack_me_solution/assets/104728608/9c30ed14-b0cb-4034-866f-6de9f55e849d)
 
+---
+
 The modified file is available here:
 
 [https://github.com/otammato/crack_me_solution/blob/da85f213666ba2357f582e569ee83f354b6a0b44/crack_me_platinum.html](https://otammato.github.io/crack_me_solution/crack_me_platinum.html)https://otammato.github.io/crack_me_solution/crack_me_platinum.html
