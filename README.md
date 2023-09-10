@@ -1,96 +1,110 @@
-# crack_me_solution
 
-1. To see the objective, manipulated the code to bypass all the logic and directly display the decoded alert message, decoded base64 strings:
-   ```
-   alert(atob("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
-   ```
-    <img width="1000" alt="Screenshot 2023-09-10 at 09 58 47" src="https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7">
-   
-2. found out how the mechanism of triggering the alert works and modified the `if` condition of the `setInterval()` function.
-   
-   The if condition checks two things:
-    - That the length of the runes array is greater than 2.
-    - The immediately-invoked function expression (IIFE) calculates the sum of ASCII values of the characters in the clue string and checks if it equals 469.
-    If both conditions are true, the nested code within the if-statement gets executed:
+### Crack_Me Solution
 
-   `ee(b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));`
 
-    This base64 string, when decoded, translates to: alert("Congratulations Oh 1337 One! You have found my treasure!"). It's a congratulatory message that pops up when you solve the puzzle.
 
-   
-3. switched off the mechanism embedded in the `setInterval()` function  which prevents from using DevTools (which launches the debugger every 2 seconds and stopping the execution of code if DevTools are open):
+The solution to this coding puzzle involves several steps:
+
+#### 1. Displaying the Objective Message:
+To get an overview of the task at hand, I manipulated the code to bypass the built-in logic and directly display the decoded message. The alert message was obtained by decoding the provided base64 strings:
+
+```javascript
+alert(atob("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
+```
+
+![Objective Image](https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7)
+
+#### 2. Understanding the Alert Mechanism:
+Upon further examination, I discerned the mechanism triggering the alert:
+
+- The `setInterval()` function's `if` condition performs two checks:
+  - The length of the `runes` array must exceed 2.
+  - The sum of ASCII values of characters in the clue string must be equal to 469.
   
-   `// ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));`
-   
-6. switched off the mechanism related to the manipulation of the `clue` variable based on the Image's ID. 
-   ```
-   // var el = new Image();
-            // Object.defineProperty(el, 'id', {
-            //     get: function () {
-            //         clue = b(tY(spikes[0x05]));
-            //     }
-            // });         
-            // requestAnimationFrame(function check() {
-            //     console.dir(el);
-            //     console.clear();
-            //     requestAnimationFrame(check);
-            // }); 
-   ```
+If these conditions are met, the encoded congratulatory message displays:
 
-8. To display the coordinates when the "x" is being moved over the screen in a regular format on the screen (rather than base64 encoded),  modified the IChing() function:
+```javascript
+ee(b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
+```
 
-    ```
-    // document.getElementById("gps").innerHTML = btoa(y.toString() + "," + x.toString()).replace("=", "\n\<br>\\n");
-    document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
-    ```
+This message translates to:
+```
+alert("Congratulations Oh 1337 One! You have found my treasure!")
+```
 
-9. To find the `clue`, used DevTools and `clue` command in the console:
-    
-    ```
-    clue
-    'LAMBERT'
-    
-    ```
-11. Matching:
-    
-    ```
-    L = ASCII value: 76
-    A = ASCII value: 65
-    M = ASCII value: 77
-    B = ASCII value: 66
-    E = ASCII value: 69
-    R = ASCII value: 82
-    T = ASCII value: 84
-    ```
+#### 3. Disabling DevTools Mechanism:
+A mechanism in the `setInterval()` function launches the debugger every 2 seconds to halt the code execution if DevTools are open. To bypass this, I disabled the function:
 
+```javascript
+// ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));
+```
 
-12. Draged the "X" to the following coordinates:
+#### 4. Disabling Image ID Manipulation:
+The code manipulates the `clue` variable based on the Image's ID. I disabled this mechanism to simplify the process:
 
-      Drag the "X" to (x: 76, y: 65), corresponding to the ASCII values of the characters 'L' and 'A'.<br>
-      
-     ```
-     runes
-     ['alpha']
-     ```
-      
-      Move the "X" to (x: 77, y: 66) for 'M' and 'B'.<br>
+```javascript
+/* 
+// var el = new Image();
+// Object.defineProperty(el, 'id', {
+// get: function () {
+// clue = b(tY(spikes[0x05]));
+// }
+// });         
+// requestAnimationFrame(function check() {
+// console.dir(el);
+// console.clear();
+// requestAnimationFrame(check);
+// });
+*/
+```
 
-      ```
-     runes
-     ['alpha', 'beta']
-     ```
+#### 5. Displaying Coordinates:
+For convenience, I modified the IChing() function to display x and y coordinates in a standard format instead of the base64 encoded string:
 
-      
-      Then, drag it to (x: 69, y: 82) for 'E' and 'R'.<br>
+```javascript
+document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
+```
 
-       ```
-       runes
-       ['alpha', 'beta', 'gamma']
-       ```
-      
-      Finally, (x: 84, y: 0). But this is already not neccesarry as the the length of the runes array is greater than `2`, the sum of ASCII values of the characters in `LAMBERT` is greater than `469`. So `setInterval()` works out and the alert is triggered<br>
+#### 6. Retrieving the Clue:
+Using DevTools and the `clue` command in the console, I identified the keyword 'LAMBERT'. 
 
-      <img width="1000" alt="Screenshot 2023-09-10 at 17 32 46" src="https://github.com/otammato/crack_me_solution/assets/104728608/9c30ed14-b0cb-4034-866f-6de9f55e849d">
-     
+```javascript
+clue
+// Outputs: 'LAMBERT'
+```
 
-      
+The ASCII values for the characters in `LAMBERT` are:
+
+- L: 76
+- A: 65
+- M: 77
+- B: 66
+- E: 69
+- R: 82
+- T: 84
+
+#### 7. Solving Using Coordinates:
+I then matched the ASCII values to the coordinates on the screen:
+
+- Drag "X" to (x: 76, y: 65) for 'L' and 'A'.
+  ```
+  runes
+  // Outputs: ['alpha']
+  ```
+
+- Move "X" to (x: 77, y: 66) for 'M' and 'B'.
+  ```
+  runes
+  // Outputs: ['alpha', 'beta']
+  ```
+
+- Next, to (x: 69, y: 82) for 'E' and 'R'.
+  ```
+  runes
+  // Outputs: ['alpha', 'beta', 'gamma']
+  ```
+
+- The final position, (x: 84, y: 0), wasn't necessary. With the length of `runes` array > 2 and the sum of ASCII values of `LAMBERT` > 469, the `setInterval()` function successfully triggers the alert:
+
+![Solution Image](https://github.com/otammato/crack_me_solution/assets/104728608/9c30ed14-b0cb-4034-866f-6de9f55e849d)
+
