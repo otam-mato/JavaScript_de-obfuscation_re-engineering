@@ -50,8 +50,7 @@
    ```
 
 10. tyuyyut
-
-
+    
    ```
    
    L = ASCII value: 76
