@@ -86,25 +86,25 @@ The ASCII values for the characters in `LAMBERT` are:
 #### 7. Solving Using Coordinates:
 I then matched the ASCII values to the coordinates on the screen:
 
-- Drag "X" to (x: 76, y: 65) for 'L' and 'A'.
+- Drag "X" to (x: 65, y: 76) for 'L' and 'A'.
   ```javascript
   runes
   // Outputs: ['alpha']
   ```
 
-- Move "X" to (x: 77, y: 66) for 'M' and 'B'.
+- Move "X" to (x: 66, y: 77) for 'M' and 'B'.
   ```javascript
   runes
   // Outputs: ['alpha', 'beta']
   ```
 
-- Next, to (x: 69, y: 82) for 'E' and 'R'.
+- Next, to (x: 82, y: 69) for 'E' and 'R'.
   ```javascript
   runes
   // Outputs: ['alpha', 'beta', 'gamma']
   ```
 
-- The final position, (x: 84, y: 0), wasn't necessary. With the length of `runes` array > 2 and the sum of ASCII values of `LAMBERT` > 469, the `setInterval()` function successfully triggers the alert:
+- The final position, (x: 0, y: 84), wasn't necessary. With the length of `runes` array > 2 and the sum of ASCII values of `LAMBERT` > 469, the `setInterval()` function successfully triggers the alert:
 
 ![Solution Image](https://github.com/otammato/crack_me_solution/assets/104728608/9c30ed14-b0cb-4034-866f-6de9f55e849d)
 
