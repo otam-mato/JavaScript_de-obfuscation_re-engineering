@@ -35,7 +35,7 @@
             // }); 
    ```
 
-7. To display the coordinates in a regular format on the screen (not base64 encoded), while the "x" is being moved on the screen, modified the IChing() function:
+7. To display the coordinates when the "x" is being moved over the screen in a regular format on the screen (rather than base64 encoded),  modified the IChing() function:
 
     ```
     // document.getElementById("gps").innerHTML = btoa(y.toString() + "," + x.toString()).replace("=", "\n\<br>\\n");
