@@ -111,3 +111,10 @@ I then matched the ASCII values to the coordinates on the screen:
 The modified file is available here:
 
 [https://github.com/otammato/crack_me_solution/blob/da85f213666ba2357f582e569ee83f354b6a0b44/crack_me_platinum.html](https://otammato.github.io/crack_me_solution/crack_me_platinum.html)https://otammato.github.io/crack_me_solution/crack_me_platinum.html
+
+Instructions to test it:
+
+1. Drag the "X" marker (canary) around the screen.
+2. As you move the marker, the coordinates of the marker will be displayed by the IChing function.
+3. Moving the marker to specific coordinates triggers checks against the ASCII values of the clue variable.
+4. When the correct set of coordinates is hit in sequence, an alert should display the treasure message.
