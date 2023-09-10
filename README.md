@@ -62,3 +62,10 @@
    T = ASCII value: 84
    
    ```
+
+11. Drag the "X" to the following coordinates:
+
+   Drag the "X" to (x: 76, y: 65), corresponding to the ASCII values of the characters 'L' and 'A'.
+   Move the "X" to (x: 77, y: 66) for 'M' and 'B'.
+   Then, drag it to (x: 69, y: 82) for 'E' and 'R'.
+   Finally, move the "X" to (x: 84, y: 0). The y value is 0 since we've run out of paired characters.
