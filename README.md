@@ -43,13 +43,30 @@
     ```
 
 9. To find the `clue`, used DevTools and launched the `clue` command in the console and got 'LAMBERT':
+    
+    ```
+    clue
+    'LAMBERT'
+    
+    ```
+11. ddddd
+    
+    ```
+   
+      L = ASCII value: 76
+      A = ASCII value: 65
+      M = ASCII value: 77
+      B = ASCII value: 66
+      E = ASCII value: 69
+      R = ASCII value: 82
+      T = ASCII value: 84
+   
+    ```
+    
 
-   ```
-   clue
-   'LAMBERT'
-   ```
+  
 
-10. tyuyyut
+13. tyuyyut
     
    ```
    
