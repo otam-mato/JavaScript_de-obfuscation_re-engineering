@@ -20,7 +20,7 @@
   
    `// ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));`
    
-6. switched off the mechanism of replacing the clue: ??
+6. switched off the mechanism related to the manipulation of the clue variable based on the Image's ID. 
    ```
    // var el = new Image();
             // Object.defineProperty(el, 'id', {
@@ -35,14 +35,14 @@
             // }); 
    ```
 
-7. To display the coordinates when the "x" is being moved over the screen in a regular format on the screen (rather than base64 encoded),  modified the IChing() function:
+8. To display the coordinates when the "x" is being moved over the screen in a regular format on the screen (rather than base64 encoded),  modified the IChing() function:
 
     ```
     // document.getElementById("gps").innerHTML = btoa(y.toString() + "," + x.toString()).replace("=", "\n\<br>\\n");
     document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
     ```
 
-8. To find the `clue`, used DevTools and launched the `clue` command in the console and got 'LAMBERT':
+9. To find the `clue`, used DevTools and launched the `clue` command in the console and got 'LAMBERT':
 
    ```
    clue
