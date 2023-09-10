@@ -52,12 +52,14 @@
 10.
 
 
-      ```
-      L = ASCII value: 76
-      A = ASCII value: 65
-      M = ASCII value: 77
-      B = ASCII value: 66
-      E = ASCII value: 69
-      R = ASCII value: 82
-      T = ASCII value: 84
-      ```
+   ```
+   
+   L = ASCII value: 76
+   A = ASCII value: 65
+   M = ASCII value: 77
+   B = ASCII value: 66
+   E = ASCII value: 69
+   R = ASCII value: 82
+   T = ASCII value: 84
+   
+   ```
