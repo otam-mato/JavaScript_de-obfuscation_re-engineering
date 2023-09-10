@@ -62,27 +62,11 @@
       T = ASCII value: 84
    
     ```
-    
 
-  
 
-13. tyuyyut
-    
-   ```
-   
-   L = ASCII value: 76
-   A = ASCII value: 65
-   M = ASCII value: 77
-   B = ASCII value: 66
-   E = ASCII value: 69
-   R = ASCII value: 82
-   T = ASCII value: 84
-   
-   ```
+12. Drag the "X" to the following coordinates:
 
-11. Drag the "X" to the following coordinates:
-
-   Drag the "X" to (x: 76, y: 65), corresponding to the ASCII values of the characters 'L' and 'A'.<br>
-   Move the "X" to (x: 77, y: 66) for 'M' and 'B'.<br>
-   Then, drag it to (x: 69, y: 82) for 'E' and 'R'.<br>
-   Finally, move the "X" to (x: 84, y: 0). The y value is 0 since we've run out of paired characters.<br>
+      Drag the "X" to (x: 76, y: 65), corresponding to the ASCII values of the characters 'L' and 'A'.<br>
+      Move the "X" to (x: 77, y: 66) for 'M' and 'B'.<br>
+      Then, drag it to (x: 69, y: 82) for 'E' and 'R'.<br>
+      Finally, move the "X" to (x: 84, y: 0). The y value is 0 since we've run out of paired characters.<br>
