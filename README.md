@@ -42,4 +42,9 @@
     document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
     ```
 
- 
+8. To find the `clue`, used DevTools and launched the `clue` command in the console and got 'LAMBERT':
+
+   ```
+   clue
+   'LAMBERT'
+   ```
