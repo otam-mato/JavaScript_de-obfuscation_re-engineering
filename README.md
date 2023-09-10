@@ -16,7 +16,7 @@
     This base64 string, when decoded, translates to: alert("Congratulations Oh 1337 One! You have found my treasure!"). It's a congratulatory message that pops up when you solve the puzzle.
 
    
-3. switched off the embedded in the `setInterval()` function mechanism of preventing the use of DevTools (which launches the debugger every 2 seconds and stopping the execution of code if DevTools are open):
+3. switched off the mechanism embedded in the `setInterval()` function  which prevents from using DevTools (which launches the debugger every 2 seconds and stopping the execution of code if DevTools are open):
   
    `// ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));`
    
