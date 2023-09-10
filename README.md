@@ -120,7 +120,8 @@ The modified file is available here:
 
 Instructions to test it:
 
-1. Drag the "X" marker (canary) around the screen.
-2. As you move the marker, the coordinates of the marker will be displayed by the IChing function.
-3. Moving the marker to specific coordinates triggers checks against the ASCII values of the clue variable.
-4. When the correct set of coordinates is hit in sequence, an alert should display the treasure message.
+1. Execute the ommand `clue` in the console to make sure the clue is 'LAMBERT'
+2. Drag the "X" marker (canary) around the screen and hit the target coordinates
+3. As you move the marker, the coordinates of the marker will be displayed by the IChing function.
+4. Moving the marker to specific coordinates triggers checks against the ASCII values of the clue variable.
+5. When the correct set of coordinates is hit in sequence, an alert should display the treasure message.
