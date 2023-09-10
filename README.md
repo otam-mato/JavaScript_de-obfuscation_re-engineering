@@ -86,19 +86,19 @@ The ASCII values for the characters in `LAMBERT` are:
 #### 7. Solving Using Coordinates:
 I then matched the ASCII values to the coordinates on the screen:
 
-- Drag "X" to (x: 65, y: 76) for 'L' and 'A'.
+- Drag "X" to (x: 65, y: 76) for 'A' and 'L'.
   ```javascript
   runes
   // Outputs: ['alpha']
   ```
 
-- Move "X" to (x: 66, y: 77) for 'M' and 'B'.
+- Move "X" to (x: 66, y: 77) for 'B' and 'M'.
   ```javascript
   runes
   // Outputs: ['alpha', 'beta']
   ```
 
-- Next, to (x: 82, y: 69) for 'E' and 'R'.
+- Next, to (x: 82, y: 69) for 'R' and 'E'.
   ```javascript
   runes
   // Outputs: ['alpha', 'beta', 'gamma']
