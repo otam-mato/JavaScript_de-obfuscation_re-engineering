@@ -32,7 +32,7 @@ This message translates to:
 alert("Congratulations Oh 1337 One! You have found my treasure!")
 ```
 
-#### 3. Disabling DevTools Mechanism:
+#### 3. Disabling debugger Mechanism:
 A mechanism in the `setInterval()` function launches the debugger every 2 seconds to halt the code execution if DevTools are open. To bypass this, I disabled the function:
 
 ```javascript
