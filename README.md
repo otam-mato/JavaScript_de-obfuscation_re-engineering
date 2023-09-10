@@ -19,7 +19,7 @@ Upon further examination, I discerned the mechanism triggering the alert:
 
 - The `setInterval()` function's `if` condition performs two checks:
   - The length of the `runes` array must exceed 2.
-  - The sum of ASCII values of characters in the clue string must be equal to 469.
+  - The sum of ASCII values of characters in the clue string must be equal to 469. I modified `tt == 469;` into `tt >= 469;` for the simplicity to trigger `setInterval()` function
   
 If these conditions are met, the encoded congratulatory message displays:
 
