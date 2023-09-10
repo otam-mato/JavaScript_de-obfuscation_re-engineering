@@ -125,3 +125,6 @@ Instructions to test it:
 3. As you move the marker, the coordinates of the marker will be displayed by the IChing function.
 4. Moving the marker to specific coordinates triggers checks against the ASCII values of the clue variable.
 5. When the correct set of coordinates is hit in sequence, an alert should display the treasure message.
+
+
+<img width="1000" alt="Screenshot 2023-09-10 at 23 37 22" src="https://github.com/otammato/crack_me_solution/assets/104728608/48460c81-3f72-4029-a71f-ffb1c0884d00">
