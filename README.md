@@ -51,6 +51,7 @@
 
 10.
 
+
       ```
       L = ASCII value: 76
       A = ASCII value: 65
