@@ -18,19 +18,32 @@ The solution to this coding puzzle involves several steps:
    The main functions are:
 
    ```javascript
+   // A function to run every 2000 milliseconds (2 seconds)
    setInterval(() => {
-                ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));
-                if (runes.length > 2 && (function (targ) {
-                                            tt = 0;
-                                            for (i = 0; i < targ.length; i++) {
-                                                tt += targ.charCodeAt(i);
-                                            }
-                                            return tt == 469;
-                                        })(clue)){
-                    ee(b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
-                    runes=[];
-                }
-            }, 2000);
+   
+       // Run the "debugger" command (by obfuscating the string "debugger" and then evaluating it)
+       ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));
+       
+       // Check if the "runes" array has more than 2 elements
+       // AND if the sum of character codes of the "clue" string is 469
+       if (runes.length > 2 && (function (targ) {
+                                    tt = 0;
+                                    // Calculate the sum of character codes
+                                    for (i = 0; i < targ.length; i++) {
+                                        tt += targ.charCodeAt(i);
+                                    }
+                                    // Return true if the sum is 469
+                                    return tt == 469;
+                                })(clue)){
+           // Display an alert saying "Congratulations Oh 1337 One! You have found my treasure!"
+           // (By obfuscating the message and then decoding and evaluating it)
+           ee(b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
+           
+           // Reset the "runes" array to be empty
+           runes=[];
+       }
+   }, 2000);
+   
    ```
    <details markdown=1><summary markdown="span">description for the `setInterval` function</summary>
      
