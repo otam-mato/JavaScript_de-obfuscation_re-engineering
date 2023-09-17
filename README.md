@@ -128,7 +128,7 @@ The solution to this coding puzzle involves several steps:
    
    #### 4. As an immediately-invoked function expression (IIFE) inside the iChing() checks if the sum of the ASCII character codes of the `clue` equals 469, we need a `clue`. It can be retrieved either by:
 
-   #### a. `b(tY(spikes[3]))` according to this part of code:
+   #### a. `b(tY(spikes[3]))` which is 'LAMBERT' or `b(tY(spikes[4]))` which is 'RIPLEY' according to this part of code (depending on the additional logic):
 
    ```
    let clue = (function(){
@@ -158,13 +158,36 @@ The solution to this coding puzzle involves several steps:
 
    they are swapped according to the IChing() logic:  `y == clue.charCodeAt(0) && x == clue.charCodeAt(1)`
 
-   #### 6. So, the coordinates are:
+   #### 6. Thus, the coordinates are:
 
    (65, 76)
    (66, 77)
    (82, 69)
 
+   #### 7. Adding these values together:
 
+   76 + 65 + 77 + 66 + 69 + 82 + 84 = 499
+
+   So, the sum of the ASCII characters for "LAMBERT" is 499 which is not 469 needed to satisfy the logic of setInterval() necessary to trigger the alert.
+
+   #### 7. Now, we have options:
+
+   #### a. Modify the setInterval() function to trigger the alert based on the 'LAMBERT' clue:
+   
+   replace `return tt == 469;` with `return tt >= 469;`
+
+   #### b. or Modify the 'User Agent' string of our browser to include the string 'BLACKSEA' at index = 9, needed by this logic:
+
+   ```
+   let clue = (function(){
+                if (window[b(tY(spikes[0x00]))][b(tY(spikes[0x01]))].indexOf(b(tY(spikes[0x06]))) == 9){
+                    return b(tY(spikes[0x04]));
+                } else {
+                    return b(tY(spikes[0x03])); 
+                }; 
+            })();
+   ```
+   the function returns either 'LAMBERT' or 'RIPLEY' based on the check if spikes[9] equals window['navigator']['userAgent'].indexOf('BLACKSEA')
 
 
    
