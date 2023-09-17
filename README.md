@@ -176,11 +176,11 @@ To switch the 'clue' to 'RIPLEY', some user agent matipulations are necessary. P
 
 ## Step 4: Understanding Character Values
 
-For the clue to satisfy the conditions, its character values should sum up to 469. 
+For the clue to satisfy the second condition of setInterval(), its character values should sum up to 469. 
 
-For example:
 
 For `LAMBERT`, the sum is 499.
+
 For `RIPLEY`, the sum is 469.
 
 ---
