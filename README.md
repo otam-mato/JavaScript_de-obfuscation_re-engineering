@@ -179,9 +179,33 @@ To switch the 'clue' to 'RIPLEY', some user agent matipulations are necessary. P
 For the clue to satisfy the second condition of setInterval(), its character values should sum up to 469. 
 
 
-For `LAMBERT`, the sum is 499.
+### A. For `LAMBERT`, 
 
-For `RIPLEY`, the sum is 469.
+The ASCII values for the characters in `LAMBERT` are:
+
+   - L: 76
+   - A: 65
+   - M: 77
+   - B: 66
+   - E: 69
+   - R: 82
+   - T: 84
+     
+The sum is 499.
+
+
+### B. For `RIPLEY`
+
+the ASCII values for each letter in 'RIPLEY':
+
+   - R: 82
+   - I: 73
+   - P: 80
+   - L: 76
+   - E: 69
+   - Y: 89
+
+The sum is 469.
 
 ---
 
@@ -197,10 +221,16 @@ return tt >= 469;
 
 ### B. Modifying the 'User Agent'
 
-Change the 'User Agent' string in your browser to have the string `BLACKSEA` at index 9:
+Change the 'User Agent' string in your browser to have the string `BLACKSEA` at index 9, to satisfy this condition:
 
 ```javascript
-let clue = ...
+let clue = (function(){
+                if (window[b(tY(spikes[0x00]))][b(tY(spikes[0x01]))].indexOf(b(tY(spikes[0x06]))) == 9){
+                    return b(tY(spikes[0x04]));
+                } else {
+                    return b(tY(spikes[0x03])); 
+                }; 
+            })();
 ```
 
 ---
