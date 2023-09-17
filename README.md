@@ -13,7 +13,7 @@ The solution to this coding puzzle involves several steps:
    ```
 ![Objective Image](https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7)
 
-#### 2. I separated the direct functions and variables responsible for logic from the secondary ones aimed at the obfuscation and distraction
+#### 2. I checked the direct functions and variables responsible for the main logic
 
    The main functions are:
 
@@ -75,6 +75,35 @@ The solution to this coding puzzle involves several steps:
     
     In summary, every 2 seconds, this script triggers a debugger, checks if certain conditions are met, and if they are, alerts the user that they've found a "treasure".
    </details>
+
+   <br><br>
+
+   ```
+   function IChing(x,y){
+
+    // This commented-out code would set the innerHTML of an element with id "gps" to a base64 encoded version of the coordinates x and y.
+
+    // document.getElementById("gps").innerHTML = btoa(y.toString() + "," + x.toString()).replace("=", "\n\<br>\\n");
+
+    // Despite it is exessive for triggering the alert, for the convenience, I set x and y coordinates in the HTML element to be displayed in the decoded format
+    document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
+
+    // Check if y matches the char code of the first character in clue, x matches the char code of the second character in clue, and the runes array is currently empty.
+    if (y == clue.charCodeAt(0) && x == clue.charCodeAt(1) && !runes.length){
+        // If conditions are met, push a value from spikes[11] to the runes array
+        runes.push(b(tY(spikes[11])));
+    } 
+    // Similar to the above, but now checking the 3rd and 4th characters in clue and if the runes array currently has 1 element.
+    else if (y == clue.charCodeAt(2) && x == clue.charCodeAt(3) && runes.length == 1){
+        runes.push(b(tY(spikes[12])));
+    } 
+    // Similarly, checking the 5th and 6th characters in clue and if the runes array currently has 2 elements.
+    else if (y == clue.charCodeAt(4) && x == clue.charCodeAt(5) && runes.length == 2){
+        runes.push(b(tY(spikes[13])));
+      }
+   }
+
+   ```
 
 
 <details markdown=1><summary markdown="span">Old</summary>
