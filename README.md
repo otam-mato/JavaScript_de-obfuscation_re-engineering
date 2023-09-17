@@ -6,7 +6,7 @@ This solution walkthrough covers multiple steps in deciphering the coding puzzle
 
 ---
 
-## **Step 1: Identify the Objective**
+## Step 1: Identify the Objective**
 Start by bypassing the built-in logic to directly display the decoded message. This alert message is derived from decoding the given base64 strings:
 
 ```javascript
