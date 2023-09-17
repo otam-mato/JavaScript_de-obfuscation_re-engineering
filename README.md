@@ -105,6 +105,12 @@ The solution to this coding puzzle involves several steps:
 
    ```
 
+   #### 3. To make the functions work, the values from the `spikes` array are taken:
+
+   ```javascript
+   let spikes = ["ymF2aWdhdG9b", "0XNlckFnZW5d", "=W5kZXhPZg=a", "=EFNQkVSVA=T", "ZklQTEVU", "=UxERVJTT04Q", "=kxBQ0tTRUEQ", "yGlZ", "=2xlYXIY", "=2x1ZQ=Y", "52FuYXJY", "=WxwaGEY", "=mV0YQ=Y", "=2FtbWEZ"]
+   ```
+
 
 <details markdown=1><summary markdown="span">Old</summary>
 
