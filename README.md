@@ -121,7 +121,7 @@ function IChing(x,y){
 
 ### C. Other Artifacts
 
-The 'spikes' array serves as a source of values for all puzzle logic
+The 'spikes' array serves as a source of values for all logic of the puzzle
 
 ```javascript
 // The spikes array contains obfuscated data and is used by all primary functions
