@@ -28,8 +28,7 @@ setInterval(() => {
 }, 2000);
 ```
 
-<details markdown=1>
-<summary markdown="span">Detailed description for the `setInterval()` function</summary>
+<details markdown=1><summary markdown="span">Detailed description for the `setInterval()` function</summary>
 
  The `setInterval` function sets up a repeated action to be taken at a fixed interval. In this case, it's set to 2000 milliseconds (or 2 seconds). This means the provided function inside `setInterval` will execute every 2 seconds.
     
