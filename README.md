@@ -242,3 +242,14 @@ let clue = (function(){
 ---
 
 ![Image](https://github.com/otammato/crack_me_solution/assets/104728608/27ae99ce-755c-4f1b-a882-f2db61a81de5)
+
+
+---
+
+## Step 6: To Trigger the Alert:
+- either consecutively drag place the "X" at the discovered coordinates
+- or consecutively call IChing(x,y) function with x and y using the discovered coordinates
+- after each hit of the right coordinates the 'runes' array will be populated with values
+- when the 2 conditions of .... are satisfied, the alert will pop up.
+
+PS. You might need either to switch the debugging mechanizm off which prevents the script from execution or push the debugger 'play' button a few times to finish the script
