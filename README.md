@@ -172,7 +172,7 @@ The solution to this coding puzzle involves several steps:
 
    #### 7. Now, we have options:
 
-   #### a. Modify the setInterval() function to trigger the alert based on the 'LAMBERT' clue:
+   #### a. Modify the setInterval() function to trigger the alert right now based on the 'LAMBERT' clue:
    
    replace `return tt == 469;` with `return tt >= 469;`
 
