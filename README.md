@@ -126,7 +126,7 @@ The solution to this coding puzzle involves several steps:
 
    The `runes` array is populated with the spikes[11], spikes[12], spikes[13] values 
    
-   #### 4. As immediately-invoked function expression (IIFE) inside the iChing() checks if the sum of the Unicode character codes of the `clue` equals 469, we need a `clue`. It can be retrieved either by:
+   #### 4. As immediately-invoked function expression (IIFE) inside the iChing() checks if the sum of the ASCII character codes of the `clue` equals 469, we need a `clue`. It can be retrieved either by:
 
    #### a. `b(tY(spikes[3]))` according to this part of code:
 
@@ -146,6 +146,23 @@ The solution to this coding puzzle involves several steps:
    // outputs 'LAMBERT'
    ```
 
+   #### 5. The ASCII values for the characters in `LAMBERT` are:
+
+   - L: 76
+   - A: 65
+   - M: 77
+   - B: 66
+   - E: 69
+   - R: 82
+   - T: 84
+
+   they are swapped according to the IChing() logic:  `y == clue.charCodeAt(0) && x == clue.charCodeAt(1)`
+
+   #### 6. So, the coordinates are:
+
+   (65, 76)
+   (66, 77)
+   (82, 69)
 
 
 
