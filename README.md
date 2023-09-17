@@ -13,12 +13,12 @@ The solution to this coding puzzle involves several steps:
    ```
 ![Objective Image](https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7)
 
-2. I separated the direct functions and variables responsible for logic from the secondary ones aimed at the obfuscation and distraction
+#### 2. I separated the direct functions and variables responsible for logic from the secondary ones aimed at the obfuscation and distraction
 
    The main functions are:
 
    ```javascript
-   // A function to run every 2000 milliseconds (2 seconds)
+   // A function to trigger the alert which runs every 2000 milliseconds (2 seconds)
    setInterval(() => {
    
        // Run the "debugger" command (by obfuscating the string "debugger" and then evaluating it)
@@ -45,7 +45,7 @@ The solution to this coding puzzle involves several steps:
    }, 2000);
    
    ```
-   <details markdown=1><summary markdown="span">description for the `setInterval` function</summary>
+   <details markdown=1><summary markdown="span">Detailed description for the `setInterval()` function</summary>
      
     
     The `setInterval` function sets up a repeated action to be taken at a fixed interval. In this case, it's set to 2000 milliseconds (or 2 seconds). This means the provided function inside `setInterval` will execute every 2 seconds.
