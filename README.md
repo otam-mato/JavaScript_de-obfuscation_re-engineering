@@ -1,7 +1,12 @@
+### Crack_Me Solution
+
+https://crackme.s3.amazonaws.com/crack_me_platinum.html
+
+The solution to this coding puzzle involves several steps:
 
 
 
-
+<details markdown=1><summary markdown="span">Details of the Coffee suppliers sample app. Main solution</summary>
 
 ### Crack_Me Solution
 
@@ -132,3 +137,6 @@ Instructions to test it:
 
 
 <img width="1000" alt="Screenshot 2023-09-10 at 23 37 22" src="https://github.com/otammato/crack_me_solution/assets/104728608/48460c81-3f72-4029-a71f-ffb1c0884d00">
+
+
+</details>
