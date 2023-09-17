@@ -197,6 +197,12 @@ The ASCII values for the characters in `LAMBERT` are:
      
 The sum is 499.
 
+the coordinates are:
+
+   (65, 76)
+   (66, 77)
+   (82, 69)
+
 
 ### B. For 'RIPLEY'
 
@@ -210,6 +216,12 @@ the ASCII values for each letter in 'RIPLEY':
    - Y: 89
 
 The sum is 469.
+
+the coordinates are:
+
+   (73,82)
+   (76,80)
+   (89,69)
 
 ---
 
