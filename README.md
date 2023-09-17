@@ -139,26 +139,36 @@ let tY = (function(){
 
 ---
 
+## Further steps
+
+To satisfy the conditions in the `setInterval()` function, we need to retrieve the clue, convert its characters into coordinates, hit those coordinates by moving "X" over the screen or just calling IChing(...) using those coordinates
+
 ## Step 3: Retrieving the Clue
 
-To satisfy the conditions in the `setInterval()` function, we need to retrieve the clue. 
+### A. Logic for determining the clue:
 
-### A. By Deciphering 
-
-Using either: `b(tY(spikes[3]))` or `b(tY(spikes[4]))`.
+The clue is retrieved from `spikes` arrat and can be either `b(tY(spikes[3]))` which equals to 'LAMBERT' or `b(tY(spikes[4]))` which equals to 'RIPLEY' using this logic:
 
 ```javascript
-let clue = ...
+let clue = (function(){
+                if (window[b(tY(spikes[0x00]))][b(tY(spikes[0x01]))].indexOf(b(tY(spikes[0x06]))) == 9){
+                    return b(tY(spikes[0x04]));
+                } else {
+                    return b(tY(spikes[0x03])); 
+                }; 
+            })();
 ```
 
-### B. Using DevTools
+### B. Using DevTools determine the current value of 'clue'
 
-Simply use the command `clue` to retrieve the actual clue:
+Type the command `clue` to retrieve the actual one:
 
 ```javascript
 clue
 // outputs 'LAMBERT'
 ```
+
+### C. To switch the 'clue' to 'RIPLEY' some user agent matipulations are necessary. Please see below for details. 
 
 ---
 
