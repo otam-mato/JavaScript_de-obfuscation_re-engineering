@@ -174,7 +174,7 @@ clue
 
 ### C. Switching the 'clue' to 'RIPLEY'
 
-To switch the 'clue' to 'RIPLEY', some user agent matipulations are necessary. Please see below for details. 
+To switch the 'clue' to 'RIPLEY', some user agent manipulations are necessary. Please see below for details. 
 
 ---
 
