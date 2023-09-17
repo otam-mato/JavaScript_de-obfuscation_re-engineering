@@ -81,7 +81,7 @@ setInterval(() => {
 
 </details>
 
-### B. Core Puzzle Logic Function
+### B. Core Logic Function
 
 ```javascript
 function IChing(x,y){
