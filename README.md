@@ -199,8 +199,8 @@ The sum is 499.
 
 the coordinates are:
 
-   (65, 76)
-   (66, 77)
+   (65, 76)<br>
+   (66, 77)<br>
    (82, 69)
 
 
@@ -219,8 +219,8 @@ The sum is 469.
 
 the coordinates are:
 
-   (73,82)
-   (76,80)
+   (73,82)<br>
+   (76,80)<br>
    (89,69)
 
 ---
