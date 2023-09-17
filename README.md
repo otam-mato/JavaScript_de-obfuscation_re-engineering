@@ -208,13 +208,26 @@ The solution to this coding puzzle involves several steps:
 
    #### 7. Now, we have options:
 
-   a. In case we want to use 'LAMBERT' as a 'clue':
+   a. In case of using 'LAMBERT' as a 'clue':
    
    Modifying setInterval()
    Make changes in the setInterval() function to trigger the alert based on the LAMBERT clue. Specifically, replace `return tt == 469;` with `return tt >= 469;`.
 
-   b. Modifying 'User Agent'
-   Change the 'User Agent' string in your browser to have the string 'BLACKSEA' at index 9. This is based on the logic that determines if the clue will be 'LAMBERT' or 'RIPLEY'.
+   b. In case of using 'LAMBERT' as a 'clue':
+   
+   Modifying 'User Agent'
+   
+   Change the 'User Agent' string in your browser to have the string 'BLACKSEA' at index 9. This is based on the logic that determines if the clue will be 'LAMBERT' or 'RIPLEY':
+
+   ```
+   let clue = (function(){
+                if (window[b(tY(spikes[0x00]))][b(tY(spikes[0x01]))].indexOf(b(tY(spikes[0x06]))) == 9){
+                    return b(tY(spikes[0x04]));
+                } else {
+                    return b(tY(spikes[0x03])); 
+                }; 
+            })();
+   ```
 
 
    
@@ -236,27 +249,11 @@ The solution to this coding puzzle involves several steps:
    ```
    the function returns either 'LAMBERT' or 'RIPLEY' based on the check if spikes[9] equals window['navigator']['userAgent'].indexOf('BLACKSEA')
 
-   in case of the clue is 'RIPLEY' the coordinates are:
+   <img width="1000" alt="Screenshot 2023-09-17 at 13 05 00" src="https://github.com/otammato/crack_me_solution/assets/104728608/27ae99ce-755c-4f1b-a882-f2db61a81de5">
 
-   the ASCII values for each letter in the name:
-
-   - R: 82
-   - I: 73
-   - P: 80
-   - L: 76
-   - E: 69
-   - Y: 89
-
-   The sum of the ASCII characters for "RIPLEY" is 469 (82 + 73 + 80 + 76 + 69 + 89 = 469)
-
-   And the coordinates are:
-
-   (73,82)
-   (76,80)
-   (89,69)
    
 
-   <img width="1000" alt="Screenshot 2023-09-17 at 13 05 00" src="https://github.com/otammato/crack_me_solution/assets/104728608/27ae99ce-755c-4f1b-a882-f2db61a81de5">
+   
 
    
 
