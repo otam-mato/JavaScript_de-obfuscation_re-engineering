@@ -31,7 +31,32 @@ setInterval(() => {
 <details markdown=1>
 <summary markdown="span">Detailed description for the `setInterval()` function</summary>
 
-...
+ The `setInterval` function sets up a repeated action to be taken at a fixed interval. In this case, it's set to 2000 milliseconds (or 2 seconds). This means the provided function inside `setInterval` will execute every 2 seconds.
+    
+    #### a. `ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));`
+    This line is obfuscating a string:
+    
+    - `'dLb'.replace('L', 'e')` results in the string "deb".
+    - `'ug'` is just the string "ug".
+    - `'14r'.replace('14', 'ge')` results in the string "ger".
+    
+    So, the final concatenated string is "debugger". This means the line translates to `ee("debugger")`. I also found out that `ee` is an alias for the `eval` function, this is a command to execute the "debugger" statement, which will pause execution in debugging tools like the Chrome DevTools.
+    
+    #### b. The `if` statement:
+    
+    This checks two conditions:
+    
+    i. `runes.length > 2`: This checks if the `runes` array has more than 2 elements.
+    
+    ii. `(function (targ) {...})(clue)`: This is an immediately-invoked function expression (IIFE). It receives `clue` as its argument (named `targ` inside the function). The function calculates the sum of the Unicode character codes of `targ` and checks if the sum equals 469.
+    
+    If both conditions are true, then:
+    
+    - The obfuscated string `b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik=")` is decoded using function `b` (which is a variable for `atob`, responsible for decoding base64 strings) and then evaluated using `ee` (which is `eval`). The decoded string is: `alert("Congratulations Oh 1337 One! You have found my treasure!")`, which will show an alert box with this congratulatory message.
+    
+    - The `runes` array is reset to be empty with `runes=[]`.
+    
+    In summary, every 2 seconds, this script triggers a debugger, checks if certain conditions are met, and if they are, alerts the user that they've found a "treasure".
 
 </details>
 
