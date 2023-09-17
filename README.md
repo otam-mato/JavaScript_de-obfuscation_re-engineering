@@ -1,6 +1,7 @@
 ## Crack_Me Solution
 
-https://crackme.s3.amazonaws.com/crack_me_platinum.html
+
+link to puzzle: https://crackme.s3.amazonaws.com/crack_me_platinum.html
 
 The solution to this coding puzzle involves several steps:
 
