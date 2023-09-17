@@ -111,6 +111,12 @@ function IChing(x,y){
 
 <details markdown=1><summary markdown="span">Detailed description for the `IChing()` function</summary>
 
+1. IChing takes in x and y as parameters and sets an HTML element with ID "gps" to display these coordinates.
+2. The function then checks whether x and y match specific characters from the clue string and also ensures that the runes array has a specific length before making any operations:
+- If y and x match the first two characters of clue and runes is empty, the function gets the 12th item from spikes, translates its Y position using the tY function, and then pushes its 'decoded' form (using function b) to the runes array.
+- If y and x match the third and fourth characters of clue and runes has one item, a similar operation is performed but using the 13th item from spikes.
+- If they match the fifth and sixth characters and runes has two items, the 14th item from spikes is used.
+
 </details>
 
 ### C. Other Artifacts
