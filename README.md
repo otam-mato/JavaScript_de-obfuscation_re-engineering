@@ -239,7 +239,7 @@ return tt >= 469;
 
 For the `RIPLEY` clue:
 
-Change the 'User Agent' string in your browser to have the string `BLACKSEA` at index 9, to satisfy this condition and switch the clue to 'RIPLEY':
+Change the 'User Agent' string in your browser to have the string `BLACKSEA` at index 9, to satisfy the below condition and switch the clue to 'RIPLEY':
 
 ```javascript
 let clue = (function(){
