@@ -191,6 +191,19 @@ The solution to this coding puzzle involves several steps:
 
    in case of the clue is 'RIPLEY' the coordinates are:
 
+   the ASCII values for each letter in the name:
+
+   R: 82
+   I: 73
+   P: 80
+   L: 76
+   E: 69
+   Y: 89
+
+   The sum of the ASCII characters for "RIPLEY" is 469 (82 + 73 + 80 + 76 + 69 + 89 = 469)
+
+   And the coordinates are:
+
    (73,82)
    (76,80)
    (89,69)
