@@ -121,10 +121,14 @@ function IChing(x,y){
 
 ### C. Other Artifacts
 
+The 'spikes' array serves as a source of values for all puzzle logic
+
 ```javascript
 // The spikes array contains obfuscated data and is used by all primary functions
 let spikes = ["ymF2aWdhdG9b", "0XNlckFnZW5d", "=W5kZXhPZg=a", "=EFNQkVSVA=T", "ZklQTEVU", "=UxERVJTT04Q", "=kxBQ0tTRUEQ", "yGlZ", "=2xlYXIY", "=2x1ZQ=Y", "52FuYXJY", "=WxwaGEY", "=mV0YQ=Y", "=2FtbWEZ"]
 ```
+
+The decoding mechanizm of the 'spikes' values
 
 ```javascript
 // Decoding requires swapping the first and last characters of base64 strings
