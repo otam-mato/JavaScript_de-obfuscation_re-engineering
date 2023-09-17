@@ -128,7 +128,7 @@ The solution to this coding puzzle involves several steps:
 
    The `runes` array gets populated with values decoded from spikes (spikes[11], spikes[12], spikes[13] values specifically).
    
-   #### 4. As an immediately-invoked function expression (IIFE) inside the iChing() checks if the sum of the ASCII character codes of the `clue` equals 469, we need a `clue`. It can be retrieved either by:
+   #### 4. To satisfy the conditions in the main function, the sum of ASCII values of the string in clue should be 469. This can be achieved by either:
 
    #### a. `b(tY(spikes[3]))` which is 'LAMBERT' or `b(tY(spikes[4]))` which is 'RIPLEY' according to this part of code (depending on the additional logic):
 
