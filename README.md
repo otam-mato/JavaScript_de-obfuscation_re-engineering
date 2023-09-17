@@ -1,4 +1,4 @@
-# Crack_Me Solution
+# Code re-engineering task (Crack_Me Solution)
 
 [Link to the puzzle](https://crackme.s3.amazonaws.com/crack_me_platinum.html)
 
