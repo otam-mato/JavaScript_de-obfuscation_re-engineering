@@ -78,7 +78,7 @@ The solution to this coding puzzle involves several steps:
 
    <br><br>
 
-   ```
+   ```javascript
    function IChing(x,y){
 
     // This commented-out code would set the innerHTML of an element with id "gps" to a base64 encoded version of the coordinates x and y.
