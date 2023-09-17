@@ -17,9 +17,9 @@ alert(atob("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"
 
 ---
 
-## Step 2: Analysis of Primary Functions and Variables
+## Step 2: Analyze Primary Functions and Variables
 
-### A. Main Function Triggering the Alert
+### A. Main Function: Triggering the Alert
 
 ```javascript
 // Set up a function to run every 2000 milliseconds (2 seconds)
