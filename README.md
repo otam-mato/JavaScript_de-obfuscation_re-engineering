@@ -1,4 +1,8 @@
 
+
+
+
+
 ### Crack_Me Solution
 
 https://crackme.s3.amazonaws.com/crack_me_platinum.html
