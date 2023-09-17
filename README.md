@@ -79,7 +79,7 @@ The solution to this coding puzzle involves several steps:
 
    <br><br>
 
-   b. Core Game Logic Function:
+   b. Core Puzzle Logic Function:
 
    ```javascript
    function IChing(x,y){
@@ -108,14 +108,13 @@ The solution to this coding puzzle involves several steps:
 
    ```
 
-   #### 3. To make the functions work, the values from the `spikes` array are taken:
+   #### 3. Other artifacts:
 
+   The spikes array contains obfuscated data. Decoding requires swapping the first and last characters of base64 strings.
 
    ```javascript
    let spikes = ["ymF2aWdhdG9b", "0XNlckFnZW5d", "=W5kZXhPZg=a", "=EFNQkVSVA=T", "ZklQTEVU", "=UxERVJTT04Q", "=kxBQ0tTRUEQ", "yGlZ", "=2xlYXIY", "=2x1ZQ=Y", "52FuYXJY", "=WxwaGEY", "=mV0YQ=Y", "=2FtbWEZ"]
    ```
-
-   They are base64 encoded and the first and the last character in each string are swapped using:
 
    ```javascript
    let tY = (function(){
@@ -127,7 +126,7 @@ The solution to this coding puzzle involves several steps:
             })()
    ```
 
-   The `runes` array is populated with the spikes[11], spikes[12], spikes[13] values 
+   The `runes` array gets populated with values decoded from spikes (spikes[11], spikes[12], spikes[13] values specifically).
    
    #### 4. As an immediately-invoked function expression (IIFE) inside the iChing() checks if the sum of the ASCII character codes of the `clue` equals 469, we need a `clue`. It can be retrieved either by:
 
