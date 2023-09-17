@@ -14,7 +14,7 @@ The solution to this coding puzzle involves several steps:
    ```
 ![Objective Image](https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7)
 
-#### 2. I checked the direct functions and variables responsible for the main logic
+#### 2. Identify the functions and variables driving the primary logic.
 
    The main functions are:
 
