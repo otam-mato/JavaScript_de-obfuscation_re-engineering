@@ -160,9 +160,8 @@ The solution to this coding puzzle involves several steps:
    
    For 'LAMBERT', the sum is 499.
    
-   For 'RIPLEY', the sum is 469.
 
-    The ASCII values for the characters in `LAMBERT` are:
+   The ASCII values for the characters in `LAMBERT` are:
 
    - L: 76
    - A: 65
@@ -184,7 +183,40 @@ The solution to this coding puzzle involves several steps:
 
    We get the sum of the ASCII characters for "LAMBERT" is 499 which is not 469 needed to satisfy the logic of setInterval() necessary to trigger the alert.
 
+
+   For 'RIPLEY', the sum is 469.
+
+   the ASCII values for each letter in 'RIPLEY':
+
+   - R: 82
+   - I: 73
+   - P: 80
+   - L: 76
+   - E: 69
+   - Y: 89
+
+   The sum of the ASCII characters for "RIPLEY" is 469 (82 + 73 + 80 + 76 + 69 + 89 = 469)
+
+   And the coordinates are:
+
+   (73,82)
+   (76,80)
+   (89,69)
+   
+
+
    #### 7. Now, we have options:
+
+   a. In case we want to use 'LAMBERT' as a 'clue':
+   
+   Modifying setInterval()
+   Make changes in the setInterval() function to trigger the alert based on the LAMBERT clue. Specifically, replace `return tt == 469;` with `return tt >= 469;`.
+
+   b. Modifying 'User Agent'
+   Change the 'User Agent' string in your browser to have the string 'BLACKSEA' at index 9. This is based on the logic that determines if the clue will be 'LAMBERT' or 'RIPLEY'.
+
+
+   
 
    #### a. Modify the setInterval() function to trigger the alert right now based on the 'LAMBERT' clue:
    
