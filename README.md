@@ -147,7 +147,7 @@ To satisfy the conditions in the `setInterval()` function, we need to retrieve t
 
 ### A. Logic for determining the clue:
 
-The clue is retrieved from `spikes` arrat and can be either `b(tY(spikes[3]))` which equals to 'LAMBERT' or `b(tY(spikes[4]))` which equals to 'RIPLEY' using this logic:
+The clue is retrieved from `spikes` array and can be either `b(tY(spikes[3]))` which equals to 'LAMBERT' or `b(tY(spikes[4]))` which equals to 'RIPLEY' using this logic:
 
 ```javascript
 let clue = (function(){
@@ -168,7 +168,9 @@ clue
 // outputs 'LAMBERT'
 ```
 
-### C. To switch the 'clue' to 'RIPLEY' some user agent matipulations are necessary. Please see below for details. 
+### C. Switching the 'clue' to 'RIPLEY'
+
+To switch the 'clue' to 'RIPLEY', some user agent matipulations are necessary. Please see below for details. 
 
 ---
 
