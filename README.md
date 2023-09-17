@@ -4,9 +4,67 @@ https://crackme.s3.amazonaws.com/crack_me_platinum.html
 
 The solution to this coding puzzle involves several steps:
 
+#### Look into the logic of triggering the alert and check the critical functions
+
+1. To see the objective, I bypassed the built-in logic to directly display the decoded message. The alert message was obtained by decoding the provided base64 strings:
+
+   ```javascript
+   alert(atob("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
+   ```
+![Objective Image](https://github.com/otammato/crack_me_solution/assets/104728608/2a7669ff-78f0-4a50-a58a-ef593fb4abb7)
+
+2. I separated the direct functions and variables responsible for logic from the secondary ones aimed at the obfuscation and distraction
+
+   The main functions are:
+
+   ```javascript
+   setInterval(() => {
+                ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));
+                if (runes.length > 2 && (function (targ) {
+                                            tt = 0;
+                                            for (i = 0; i < targ.length; i++) {
+                                                tt += targ.charCodeAt(i);
+                                            }
+                                            return tt == 469;
+                                        })(clue)){
+                    ee(b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
+                    runes=[];
+                }
+            }, 2000);
+   ```
+   <details markdown=1><summary markdown="span">description for the `setInterval` function</summary>
+     
+    
+    The `setInterval` function sets up a repeated action to be taken at a fixed interval. In this case, it's set to 2000 milliseconds (or 2 seconds). This means the provided function inside `setInterval` will execute every 2 seconds.
+    
+    #### a. `ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));`
+    This line is obfuscating a string:
+    
+    - `'dLb'.replace('L', 'e')` results in the string "deb".
+    - `'ug'` is just the string "ug".
+    - `'14r'.replace('14', 'ge')` results in the string "ger".
+    
+    So, the final concatenated string is "debugger". This means the line translates to `ee("debugger")`. I also found out that `ee` is an alias for the `eval` function, this is a command to execute the "debugger" statement, which will pause execution in debugging tools like the Chrome DevTools.
+    
+    #### b. The `if` statement:
+    
+    This checks two conditions:
+    
+    i. `runes.length > 2`: This checks if the `runes` array has more than 2 elements.
+    
+    ii. `(function (targ) {...})(clue)`: This is an immediately-invoked function expression (IIFE). It receives `clue` as its argument (named `targ` inside the function). The function calculates the sum of the Unicode character codes of `targ` and checks if the sum equals 469.
+    
+    If both conditions are true, then:
+    
+    - The obfuscated string `b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik=")` is decoded using function `b` (which is a variable for `atob`, responsible for decoding base64 strings) and then evaluated using `ee` (which is `eval`). The decoded string is: `alert("Congratulations Oh 1337 One! You have found my treasure!")`, which will show an alert box with this congratulatory message.
+    
+    - The `runes` array is reset to be empty with `runes=[]`.
+    
+    In summary, every 2 seconds, this script triggers a debugger, checks if certain conditions are met, and if they are, alerts the user that they've found a "treasure".
+   </details>
 
 
-<details markdown=1><summary markdown="span">Details of the Coffee suppliers sample app. Main solution</summary>
+<details markdown=1><summary markdown="span">Old</summary>
 
 ### Crack_Me Solution
 
