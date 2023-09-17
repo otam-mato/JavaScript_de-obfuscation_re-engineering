@@ -124,6 +124,33 @@ The solution to this coding puzzle involves several steps:
             })()
    ```
 
+   The `runes` array is populated with the spikes[11], spikes[12], spikes[13] values 
+   
+   #### 4. As immediately-invoked function expression (IIFE) inside the iChing() checks if the sum of the Unicode character codes of the `clue` equals 469, we need a `clue`. It can be retrieved either by:
+
+   #### a. `b(tY(spikes[3]))` according to this part of code:
+
+   ```
+   let clue = (function(){
+                if (window[b(tY(spikes[0x00]))][b(tY(spikes[0x01]))].indexOf(b(tY(spikes[0x06]))) == 9){
+                    return b(tY(spikes[0x04]));
+                } else {
+                    return b(tY(spikes[0x03])); 
+                }; 
+            })();
+   ```
+   #### b. or just `clue` using DevTools and console:
+
+   ```
+   clue
+   // outputs 'LAMBERT'
+
+
+
+
+
+
+   
 
 <details markdown=1><summary markdown="span">Old</summary>
 
