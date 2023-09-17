@@ -253,4 +253,4 @@ let clue = (function(){
 - With each correct coordinate input, the 'runes' array gets updated.
 - Once the conditions are met, the alert activates.
 
-> **Note**: You might need to disable the debugging mechanism that halts script execution or hit the debugger's 'play' button multiple times to finalize the script.
+> **Note**: You might need to disable the debugging mechanism that halts script execution or hit the debugger's 'play' button multiple times to finalize the script execution.
