@@ -215,9 +215,9 @@ The sum is 469.
 
 ## Step 5: Options to Trigger the Alert
 
-### A. Modifying the setInterval()
+### A. Modifying the setInterval() function
 
-For the `LAMBERT` clue, modify the setInterval() function:
+For the 'LAMBERT' clue, modify the setInterval() function:
 
 ```javascript
 return tt >= 469;
@@ -246,10 +246,11 @@ let clue = (function(){
 
 ---
 
-## Step 6: Trigger the Alert:
-- either consecutively drag place the "X" at the discovered coordinates
-- or consecutively call IChing(x,y) function with x and y using the discovered coordinates
-- after each hit of the right coordinates the 'runes' array will be populated with values
-- when the 2 conditions of .... are satisfied, the alert will pop up.
+## **Step 6: Triggering the Alert**
 
-PS. You might need either to switch the debugging mechanizm off which prevents the script from execution or push the debugger 'play' button a few times to finish the script
+- Manually drag and drop the "X" to the identified coordinates.
+- Alternatively, use the `IChing(x,y)` function with the discovered x and y coordinates.
+- With each correct coordinate input, the 'runes' array gets updated.
+- Once the conditions are met, the alert activates.
+
+> **Note**: You might need to disable the debugging mechanism that halts script execution or hit the debugger's 'play' button multiple times to finalize the script.
