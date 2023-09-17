@@ -6,8 +6,8 @@ This solution walkthrough covers multiple steps in deciphering the coding puzzle
 
 ---
 
-## Step 1: Understanding the Objective
-To understand the objective, bypass the built-in logic to display the decoded message directly. The alert message was obtained by decoding the provided base64 strings:
+## **Step 1: Identify the Objective**
+Start by bypassing the built-in logic to directly display the decoded message. This alert message is derived from decoding the given base64 strings:
 
 ```javascript
 alert(atob("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
