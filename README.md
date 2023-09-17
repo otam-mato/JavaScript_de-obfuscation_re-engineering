@@ -1,10 +1,10 @@
-### Crack_Me Solution
+## Crack_Me Solution
 
 https://crackme.s3.amazonaws.com/crack_me_platinum.html
 
 The solution to this coding puzzle involves several steps:
 
-#### Look into the logic of triggering the alert and check the critical functions
+### Look into the logic of triggering the alert and check the critical functions
 
 #### 1. To see the objective, I bypassed the built-in logic to directly display the decoded message. The alert message was obtained by decoding the provided base64 strings:
 
