@@ -221,6 +221,8 @@ return tt >= 469;
 
 ### B. Modifying the 'User Agent'
 
+For the `LAMBERT` clue:
+
 Change the 'User Agent' string in your browser to have the string `BLACKSEA` at index 9, to satisfy this condition:
 
 ```javascript
