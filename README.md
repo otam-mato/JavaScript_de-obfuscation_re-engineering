@@ -81,7 +81,7 @@ setInterval(() => {
 
 </details>
 
-### B. Core Logic Function
+### B. Core Logic Function: IChing()
 
 ```javascript
 function IChing(x,y){
