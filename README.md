@@ -107,8 +107,21 @@ The solution to this coding puzzle involves several steps:
 
    #### 3. To make the functions work, the values from the `spikes` array are taken:
 
+
    ```javascript
    let spikes = ["ymF2aWdhdG9b", "0XNlckFnZW5d", "=W5kZXhPZg=a", "=EFNQkVSVA=T", "ZklQTEVU", "=UxERVJTT04Q", "=kxBQ0tTRUEQ", "yGlZ", "=2xlYXIY", "=2x1ZQ=Y", "52FuYXJY", "=WxwaGEY", "=mV0YQ=Y", "=2FtbWEZ"]
+   ```
+
+   They are base64 encoded and the first and the last character in each string are swapped using:
+
+   ```javascript
+   let tY = (function(){
+                function n(s){
+                    bb = s[0], nn = s[s.length-1];
+                    return nn + s.substring(1, s.length-1) + bb;
+                }
+                return n;
+            })()
    ```
 
 
