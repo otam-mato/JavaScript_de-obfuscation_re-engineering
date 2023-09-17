@@ -110,12 +110,13 @@ The solution to this coding puzzle involves several steps:
 
    #### 3. Other artifacts:
 
-   The spikes array contains obfuscated data. Decoding requires swapping the first and last characters of base64 strings.
+   The spikes array contains obfuscated data: 
 
    ```javascript
    let spikes = ["ymF2aWdhdG9b", "0XNlckFnZW5d", "=W5kZXhPZg=a", "=EFNQkVSVA=T", "ZklQTEVU", "=UxERVJTT04Q", "=kxBQ0tTRUEQ", "yGlZ", "=2xlYXIY", "=2x1ZQ=Y", "52FuYXJY", "=WxwaGEY", "=mV0YQ=Y", "=2FtbWEZ"]
    ```
-
+   Decoding requires swapping the first and last characters of base64 strings:
+   
    ```javascript
    let tY = (function(){
                 function n(s){
