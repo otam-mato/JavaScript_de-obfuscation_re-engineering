@@ -67,6 +67,10 @@ function IChing(x,y){
 }
 ```
 
+<details markdown=1><summary markdown="span">Detailed description for the `IChing()` function</summary>
+
+</details>
+
 ### C. Other Artifacts
 
 ```javascript
