@@ -128,9 +128,14 @@ The solution to this coding puzzle involves several steps:
 
    The `runes` array gets populated with values decoded from spikes (spikes[11], spikes[12], spikes[13] values specifically).
    
-   #### 4. To satisfy the conditions in the main function, the sum of ASCII values of the string in clue should be 469. This can be achieved by either:
+   #### 4. Retrieving the clue
+   
+   To satisfy the conditions in setInterval() function, we need to retrieve the clue the calculate the sum. The sum of ASCII values of the string in clue should be 469. This can be achieved by either:
 
-   #### a. `b(tY(spikes[3]))` which is 'LAMBERT' or `b(tY(spikes[4]))` which is 'RIPLEY' according to this part of code (depending on the additional logic):
+
+   #### a. By deciphering: b(tY(spikes[3])) or b(tY(spikes[4])) based on additional logic.
+
+   `b(tY(spikes[3]))` is 'LAMBERT', `b(tY(spikes[4]))` is 'RIPLEY' according to this part of code:
 
    ```
    let clue = (function(){
@@ -141,14 +146,23 @@ The solution to this coding puzzle involves several steps:
                 }; 
             })();
    ```
-   #### b. or just `clue` using DevTools and console:
+   
+   #### b. Or simply using DevTools with the command clue to retrieve the actual 'clue'
 
    ```
    clue
    // outputs 'LAMBERT'
    ```
 
-   #### 5. The ASCII values for the characters in `LAMBERT` are:
+   #### 5. Understanding Character Values
+   
+   To fulfill the conditions, the character ASCII values for the clue should add up to 469.
+   
+   For 'LAMBERT', the sum is 499.
+   
+   For 'RIPLEY', the sum is 469.
+
+    The ASCII values for the characters in `LAMBERT` are:
 
    - L: 76
    - A: 65
@@ -160,13 +174,11 @@ The solution to this coding puzzle involves several steps:
 
    they are swapped according to the IChing() logic:  `y == clue.charCodeAt(0) && x == clue.charCodeAt(1)`
 
-   #### 6. Thus, the coordinates are:
+   Thus, the coordinates are:
 
    (65, 76)
    (66, 77)
    (82, 69)
-
-   #### 7. Adding these values together:
 
    76 + 65 + 77 + 66 + 69 + 82 + 84 = 499
 
