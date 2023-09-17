@@ -183,7 +183,7 @@ To switch the 'clue' to 'RIPLEY', some user agent matipulations are necessary. P
 For the clue to satisfy the second condition of setInterval(), its character values should sum up to 469. 
 
 
-### A. For `LAMBERT`, 
+### A. For 'LAMBERT', 
 
 The ASCII values for the characters in `LAMBERT` are:
 
@@ -198,7 +198,7 @@ The ASCII values for the characters in `LAMBERT` are:
 The sum is 499.
 
 
-### B. For `RIPLEY`
+### B. For 'RIPLEY'
 
 the ASCII values for each letter in 'RIPLEY':
 
