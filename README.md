@@ -246,7 +246,7 @@ let clue = (function(){
 
 ---
 
-## Step 6: To Trigger the Alert:
+## Step 6: Trigger the Alert:
 - either consecutively drag place the "X" at the discovered coordinates
 - or consecutively call IChing(x,y) function with x and y using the discovered coordinates
 - after each hit of the right coordinates the 'runes' array will be populated with values
