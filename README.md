@@ -85,8 +85,28 @@ setInterval(() => {
 
 ```javascript
 function IChing(x,y){
-   ...
-}
+
+       // This commented-out code would set the innerHTML of an element with id "gps" to a base64 encoded version of the coordinates x and y.
+   
+       // document.getElementById("gps").innerHTML = btoa(y.toString() + "," + x.toString()).replace("=", "\n\<br>\\n");
+   
+       // For manual interaction and moving the "X" on the screen to hit the coordinates, I set up the x and y coordinates to be displayed in the decoded format:
+       document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
+   
+       // Check if y matches the char code of the first character in clue, x matches the char code of the second character in clue, and the runes array is currently empty.
+       if (y == clue.charCodeAt(0) && x == clue.charCodeAt(1) && !runes.length){
+           // If conditions are met, push a value from spikes[11] to the runes array
+           runes.push(b(tY(spikes[11])));
+       } 
+       // Similar to the above, but now checking the 3rd and 4th characters in clue and if the runes array currently has 1 element.
+       else if (y == clue.charCodeAt(2) && x == clue.charCodeAt(3) && runes.length == 1){
+           runes.push(b(tY(spikes[12])));
+       } 
+       // Similarly, checking the 5th and 6th characters in clue and if the runes array currently has 2 elements.
+       else if (y == clue.charCodeAt(4) && x == clue.charCodeAt(5) && runes.length == 2){
+           runes.push(b(tY(spikes[13])));
+         }
+      }
 ```
 
 <details markdown=1><summary markdown="span">Detailed description for the `IChing()` function</summary>
