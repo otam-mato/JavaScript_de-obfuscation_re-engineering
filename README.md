@@ -119,7 +119,7 @@ function IChing(x,y){
 
 </details>
 
-### C. Other Artifacts
+### C. Other Essential Components
 
 The 'spikes' array serves as a source of values for all logic of the puzzle
 
