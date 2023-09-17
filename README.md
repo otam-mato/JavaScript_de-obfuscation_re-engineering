@@ -6,7 +6,7 @@ The solution to this coding puzzle involves several steps:
 
 #### Look into the logic of triggering the alert and check the critical functions
 
-##### 1. To see the objective, I bypassed the built-in logic to directly display the decoded message. The alert message was obtained by decoding the provided base64 strings:
+#### 1. To see the objective, I bypassed the built-in logic to directly display the decoded message. The alert message was obtained by decoding the provided base64 strings:
 
    ```javascript
    alert(atob("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
