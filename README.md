@@ -16,7 +16,7 @@ The solution to this coding puzzle involves several steps:
 
 #### 2. Identify the functions and variables driving the primary logic.
 
-   The key functions are:
+   a. Main Function triggering the alert:
 
    ```javascript
    // A function to trigger the alert which runs every 2000 milliseconds (2 seconds)
@@ -78,6 +78,8 @@ The solution to this coding puzzle involves several steps:
    </details>
 
    <br><br>
+
+   b. Core Game Logic Function:
 
    ```javascript
    function IChing(x,y){
