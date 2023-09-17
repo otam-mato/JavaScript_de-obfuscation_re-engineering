@@ -168,7 +168,7 @@ The solution to this coding puzzle involves several steps:
 
    76 + 65 + 77 + 66 + 69 + 82 + 84 = 499
 
-   So, the sum of the ASCII characters for "LAMBERT" is 499 which is not 469 needed to satisfy the logic of setInterval() necessary to trigger the alert.
+   We get the sum of the ASCII characters for "LAMBERT" is 499 which is not 469 needed to satisfy the logic of setInterval() necessary to trigger the alert.
 
    #### 7. Now, we have options:
 
