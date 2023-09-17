@@ -70,13 +70,19 @@ function IChing(x,y){
 ### C. Other Artifacts
 
 ```javascript
-// The spikes array contains obfuscated data
-let spikes = ["ymF2aWdhdG9b", ...];
+// The spikes array contains obfuscated data and is used by all primary functions
+let spikes = ["ymF2aWdhdG9b", "0XNlckFnZW5d", "=W5kZXhPZg=a", "=EFNQkVSVA=T", "ZklQTEVU", "=UxERVJTT04Q", "=kxBQ0tTRUEQ", "yGlZ", "=2xlYXIY", "=2x1ZQ=Y", "52FuYXJY", "=WxwaGEY", "=mV0YQ=Y", "=2FtbWEZ"]
 ```
 
 ```javascript
 // Decoding requires swapping the first and last characters of base64 strings
-let tY = ...
+let tY = (function(){
+                function n(s){
+                    bb = s[0], nn = s[s.length-1];
+                    return nn + s.substring(1, s.length-1) + bb;
+                }
+                return n;
+            })()
 ```
 
 ---
