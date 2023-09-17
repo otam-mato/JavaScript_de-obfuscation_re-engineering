@@ -1,8 +1,8 @@
 # Code re-engineering task (Crack_Me Solution)
 
-[Link to the puzzle](https://crackme.s3.amazonaws.com/crack_me_platinum.html)
+[View the puzzle here](https://crackme.s3.amazonaws.com/crack_me_platinum.html)
 
-The solution to this coding puzzle involves several steps:
+This solution walkthrough covers multiple steps in deciphering the coding puzzle:
 
 ---
 
