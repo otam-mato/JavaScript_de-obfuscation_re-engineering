@@ -229,7 +229,7 @@ the coordinates are:
 
 ### A. Modifying the setInterval() function
 
-For the 'LAMBERT' clue, modify the setInterval() function:
+For the 'LAMBERT' clue, to bypass the check of sum for ASCII values, modify the setInterval() function:
 
 ```javascript
 return tt >= 469;
@@ -239,7 +239,7 @@ return tt >= 469;
 
 For the `RIPLEY` clue:
 
-Change the 'User Agent' string in your browser to have the string `BLACKSEA` at index 9, to satisfy this condition:
+Change the 'User Agent' string in your browser to have the string `BLACKSEA` at index 9, to satisfy this condition and switch the clue to 'RIPLEY':
 
 ```javascript
 let clue = (function(){
