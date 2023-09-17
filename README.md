@@ -261,7 +261,7 @@ let clue = (function(){
 ## **Step 6: Triggering the Alert**
 
 - Manually drag and drop the "X" to the identified coordinates.
-- Alternatively, use the `IChing(x,y)` function with the discovered x and y coordinates.
+- Alternatively, use the `IChing(x,y)` function with the discovered on previous steps 'x' and 'y' coordinates.
 - With each correct coordinate input, the 'runes' array gets updated.
 - Once the conditions are met, the alert activates.
 
