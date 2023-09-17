@@ -189,6 +189,12 @@ The solution to this coding puzzle involves several steps:
    ```
    the function returns either 'LAMBERT' or 'RIPLEY' based on the check if spikes[9] equals window['navigator']['userAgent'].indexOf('BLACKSEA')
 
+   in case of the clue is 'RIPLEY' the coordinates are:
+
+   (73,82)
+   (76,80)
+   (89,69)
+   
 
    <img width="1000" alt="Screenshot 2023-09-17 at 13 05 00" src="https://github.com/otammato/crack_me_solution/assets/104728608/27ae99ce-755c-4f1b-a882-f2db61a81de5">
 
