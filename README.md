@@ -197,7 +197,7 @@ The ASCII values for the characters in `LAMBERT` are:
    - R: 82
    - T: 84
      
-The sum is 499.
+The sum is 499 (which is obviously more than needed 469)
 
 the coordinates are:
 
