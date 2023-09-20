@@ -83,6 +83,8 @@ setInterval(() => {
 
 ### B. Core Logic Function: IChing()
 
+This function fills the 'runes' array with values from the 'spikes' array. This ensures that one of the two conditions is met for the setInterval() function to activate the alert.
+
 ```javascript
 function IChing(x,y){
 
@@ -90,7 +92,7 @@ function IChing(x,y){
    
        // document.getElementById("gps").innerHTML = btoa(y.toString() + "," + x.toString()).replace("=", "\n\<br>\\n");
    
-       // For manual interaction and moving the "X" on the screen to hit the coordinates, I set up the x and y coordinates to be displayed in the decoded format:
+       // For manual interaction while moving the "X" on the screen to target specific coordinates, I set up the x and y coordinates to be displayed in a decoded format:
        document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
    
        // Check if y matches the char code of the first character in clue, x matches the char code of the second character in clue, and the runes array is currently empty.
