@@ -167,7 +167,7 @@ let clue = (function(){
 
 ### B. Using DevTools to determine the current value of 'clue'
 
-Type the command `clue` to retrieve the actual one:
+Type the command `clue` to retrieve the actual value:
 
 ```javascript
 clue
