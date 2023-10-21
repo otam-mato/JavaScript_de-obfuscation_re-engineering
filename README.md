@@ -2,6 +2,8 @@
 
 [View the puzzle here](https://crackme.s3.amazonaws.com/crack_me_platinum.html)
 
+The objective is to interact with the puzzle and move the X to find the hidden treasure by "cracking" the location in the source code.
+
 This solution walkthrough covers multiple steps in deciphering the coding puzzle:
 
 ---
