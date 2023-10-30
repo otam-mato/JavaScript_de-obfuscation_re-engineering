@@ -233,7 +233,7 @@ the coordinates are:
 
 ### A. Modifying the setInterval() function
 
-For the 'LAMBERT' clue, to bypass the check of sum for ASCII values, modify the setInterval() function:
+For the `LAMBERT` clue, to bypass the check of sum for ASCII values, modify the setInterval() function:
 
 ```javascript
 return tt >= 469;
