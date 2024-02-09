@@ -231,7 +231,7 @@ the coordinates are:
 
 ## Step 5: Options to Trigger the Alert
 
-### A. Modifying the setInterval() function
+### Option A. Modifying the setInterval() function
 
 For the `LAMBERT` clue, to bypass the check of sum for ASCII values, modify the setInterval() function:
 
@@ -239,7 +239,7 @@ For the `LAMBERT` clue, to bypass the check of sum for ASCII values, modify the 
 return tt >= 469;
 ```
 
-### B. Modifying the 'User Agent'
+### Option B. Modifying the 'User Agent'
 
 For the `RIPLEY` clue:
 
