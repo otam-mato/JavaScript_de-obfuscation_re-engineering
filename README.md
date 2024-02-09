@@ -1,4 +1,4 @@
-# Code re-engineering task (Crack_Me Solution)
+# JavaScript code re-engineering / de-obfuscation 
 
 [View the puzzle here](https://crackme.s3.amazonaws.com/crack_me_platinum.html)
 
